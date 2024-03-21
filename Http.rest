@@ -1,0 +1,36 @@
+@host = http://127.0.0.1:8000
+@react_base_url = {{host}}/api
+@public_header = Content-Type: application/json\r\nAccept:application/json\r\nAccept-Language:en
+@auth_user_header = Content-Type: application/json\r\nAccept:application/json\r\nAccept-Language:en en\r\nAccept\Authorization:Bearer 1|qHXlha6onZDqiri9Eb5s0IcKcZoYJKJTsaX2RGJw
+@auth_Admin_header = Content-Type: application/json\r\nAccept:application/json\r\nAccept-Language:en en\r\nAccept\Authorization:Bearer
+#-------PING------------#
+###
+# ---------------------------------------------------------------------------------------------------------------------------------------
+
+
+# @name registeration
+POST {{react_base_url}}/users/Registeration HTTP/1.1
+{{public_header}}
+
+{
+    "name":"RAM",
+    "email":"ram123@gmail.com",
+    "password":"12345678"
+}
+
+###
+
+# @name Login
+POST {{react_base_url}}/users/Login HTTP/1.1
+# {{public_header}}
+
+{
+    "email":"ravindra123@gmail.com",
+    "password":"12345678"
+}
+
+
+
+
+
+###
